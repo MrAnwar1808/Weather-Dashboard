@@ -1,0 +1,130 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+
+.weather-search {
+  margin-bottom: 20px;
+}
+
+.weather-search input {
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.weather-search input:focus {
+  border: 2px solid #007bff;
+}
+
+.weather-search button {
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.weather-search button:hover {
+  background-color: #0056b3;
+}
+
+
+.loading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+
+.weather-card {
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  border-radius: 8px;
+  padding: 50px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.weather-card h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: rgb(10, 10, 10);
+}
+
+.weather-card p {
+  margin: 5px 0;
+  color: black;
+}
+
+.weather-card .temp {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+
+.weather-forecast {
+  margin-top: 40px;
+}
+
+.forecast-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 calc(20% - 15px);
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+}
+
+.forecast-card .forecast-temp {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
